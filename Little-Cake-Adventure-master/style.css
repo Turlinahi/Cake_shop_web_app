@@ -1,0 +1,35 @@
+h1{
+    font-size: 65px;
+    font-family: "Trebuchet MS";
+    line-height: 50px
+}
+h2{
+    font-family: "Courier";
+    color: #222222;
+}
+p{
+    word-spacing: -5px;
+    font-family: "Courier";
+}
+
+a{
+    font-weight: bold;
+    text-decoration: none;
+}
+a:link {
+    color: #222222;
+}
+a:visited {
+    color: #553333;
+}
+a:hover {
+    color: #442233;
+}
+canvas {  
+  image-rendering: optimizeSpeed;             /* Older versions of FF          */
+  image-rendering: -moz-crisp-edges;          /* FF 6.0+                       */
+  image-rendering: -webkit-optimize-contrast; /* Safari                        */
+  image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
+  image-rendering: pixelated;                 /* Awesome future-browsers       */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE     
+}

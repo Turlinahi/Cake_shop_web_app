@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("background.jpg");
+    height:100vh;
+    overflow:scroll;
+   
+}
+
+.footer-basic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-basic .social {
+  margin-bottom: 10px;
+}
+
+.footer-basic ul.list-inline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-basic ul.list-inline li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-basic ul.list-inline li:last-child {
+  margin-right: 0;
+}
+
+
+#logo {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+#slogan1, #slogan2 {
+    float:left;
+    font-family:"Lucida Handwriting", cursive;
+    text-shadow: 2px 2px  #A9A9A9;
+}
+#slogan1 {
+    padding-left: 590px;
+    margin-top:-15px;
+    margin-bottom:-5px;
+}
+
+#slogan2 {
+    padding-left: 560px;
+    margin-bottom: 0;
+}
+#user {
+    float: right;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.userImg {
+    float: right;
+    margin-top: -15px;
+}
+.userImg a:hover {
+    background: #ffffff;
+}
+.menu {
+    background-color: #C1E1C1;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding-bottom: 20px;
+    width:1535px;
+    padding-right: 0;
+    margin-right: 0;
+}
+.page {
+    background-color: #C1E1C1;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+    font-family: "Lucida Handwriting", cursive;
+    text-shadow: 2px 2px  #A9A9A9;
+    margin-bottom: 0;
+    width:1535px;
+    padding-right: 0;
+    margin-right: 0;
+}
+.line {
+    padding:1px 1px 1px 1px;
+}
+.slider{
+  float: left;
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #C1E1C1;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #C1E1C1;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #C1E1C1;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #C1E1C1;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #C1E1C1;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #C1E1C1;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #C1E1C1;
+}
+
+.box1 {
+  background-color: #C1E1C1;
+  width: 500px;
+  border-radius: 10px;
+  font-family: "Lucida Handwriting", cursive;
+  padding: 75px;
+  margin: 60px;
+  float: left;
+  box-shadow: 0 2px 2px 2px #B8B8B8;
+}
+
+.box1 h3 {
+    color: #dca96f;
+}
+
+.box1 a:hover {
+    text-decoration: underline;
+    color: #dca96f;
+}
+
+.footer-basic {
+  padding:20px 0;
+  background-color:#C1E1C1;
+  color:#4b4c4d;
+  width:1535px;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:10px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.center h1 {
+   text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.center form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before {
+    content: '';
+    position:absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background:  #e0b385;
+}
+
+.txt_field input:focus ~ label, .txt_field input:valid ~ label {
+    top: -5px;
+    color:  #e0b385;
+}
+
+.txt_field input:focus ~ span::before, .txt_field input:valid ~ span::before {
+    width: 100%;
+}
+
+#submit {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background:  #e0b385;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+#submit:hover {
+    border-color: #e0b385;
+    transition: .5s;
+}
+
+.center button {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background:  #e0b385;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.center button:hover {
+    border-color: #e0b385;
+    transition: .5s;
+}
+
+.signup_link {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #e0b385;
+}
+
+.singup_link a {
+    color:  #e0b385;
+    text-decoration: none;
+}
+
+.signup_link a:hover {
+    text-decoration: underline;
+    color:  #e0b385;
+}
+
+.app {
+    background-color:  #e5bf9a;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width:1535px;
+}
+
+.app h1 {
+    text-align: center;
+    font-family:"Lucida Handwriting", cursive;
+    text-shadow: 2px 2px  grey;
+    width:1535px;
+}
+
+.box2 {
+    position: relative;
+    max-width: 1535px;
+    margin: -8px 0 0 0;
+    padding: 0 0 0 0;
+    border-top:1px solid grey;
+}
+
+.box2 img {
+    vertical-align: middle;
+    width: 1535px;
+    height: 445px;
+}
+
+.box2 .write {
+    position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 1540px;
+  padding: 20px;
+}
+
+.team h2 {
+    text-align: center;
+    color: #e0b385;
+    margin: 5px 0 0 0;
+}
+
+.team hr {
+    color: #e0b385;
+    border: 0.7px solid #e0b385;
+    margin: 0 0 5px 0;
+}
+
+
+.card1{
+    padding-left: 5px;
+    padding-bottom: 3px;
+    width:130px;
+    height: 140px;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 0 5px 0 570px;
+    float:left;
+}
+
+.card1 img{
+    width: 80px;
+    height: 80px;
+    margin: 5px 0 0 0;
+    border-radius: 45px;
+}
+
+
+.card1 a {
+    padding: 0 15px 5px 15px;
+    color: #ffffff;
+    background-color: #e0b385;
+    border-radius: 10px;
+}
+
+.card1 a:hover {
+    color: #ffffff;
+    padding: 0 20px 5px 18px;
+    text-decoration: none;
+}
+
+.card2{
+    padding-left: 5px;
+    padding-bottom: 3px;
+    width:130px;
+    height: 140px;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 0 5px 0 5px;
+    float:left;
+}
+
+.card2 img{
+    width: 80px;
+    height: 80px;
+    margin: 5px 0 0 0;
+    border-radius: 45px;
+}
+.card2 a {
+    padding: 0 15px 5px 15px;
+    color: #ffffff;
+    background-color: #e0b385;
+    border-radius: 10px;
+}
+
+.card2 a:hover {
+    color: #ffffff;
+    padding: 0 20px 5px 18px;
+    text-decoration: none;
+}
+
+.form {
+    margin: 50px 560px 50px 560px;
+    width: 400px;
+    background: #ffffff;
+    border-radius: 10px;
+    float: left;
+}
+
+
+.form h3 {
+   text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+#namecard {
+   margin: 3px 0 0 0;
+    color: #e0b385;
+    padding: 0 0 0 0; 
+}
+
+#work {
+    font-size:14px;
+    opacity: 0.7;
+   margin: 0 0 0 0;
+    color: grey;
+    padding: 0 0 0 0; 
+}
+
+
+
+.radio {
+    border-bottom: 2px solid #adadad;
+    margin-bottom: 50px;
+}
+
+.radio p {
+    color:#e0b385;
+    margin-left: 2px;
+}
+
+.radio label {
+    color:grey;
+    font-family: system-ui, sans-serif;
+}
+
+.contact {
+     background-color: #C1E1C1;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+    font-family: "Lucida Handwriting", cursive;
+    text-shadow: 2px 2px  #A9A9A9;
+    width:1535px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.contact h2 {
+    text-align:center;
+}
+
+.lineContact img{
+    width: 1535px;
+    height: 400px;
+    border: 1px solid black;
+}
+
+.button {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background:#daa671;
+}
+
+.button:hover {
+    background:#daa671;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.icons {
+    opacity: 0.93;
+    padding: 30px 0;
+}
+
+.icons .title {
+    background: #C1E1C1;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 2px -2px #bfbdbd;
+    opacity: 1;
+    
+}
+
+.icons img {
+    width: 70px;
+    height:auto;
+}
+
+.icons h2 {
+     color: #daa671;
+}
+
+.error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+.success {
+   background: #D4EDDA;
+   color: #40754C;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+#logout{
+    float: right;
+    margin: 12px 10px 12px 10px;
+    background-color:#daa671;
+    border-radius: 5px;
+    color: black;
+
+}
+
+
+
+
+#logout a:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+#displayText {
+    color: #ffffff;
+    background-color:#e0b385;
+    margin-right: 250px;
+    border-radius: 7px;
+    text-align: center;
+    margin: 480px 600px 0 600px;
+}
+#displayCake {
+    margin: 20px 500px;
+    text-align: center;
+}
+
+
+
+
+
